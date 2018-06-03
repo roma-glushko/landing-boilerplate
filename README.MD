@@ -5,6 +5,14 @@
 
 A boilerplate that includes LESS, Twitter Bootstrap 3, Grunt, html chunking.
 
+### Installation
+
+Installation of the boilerplate is the same as other NPM & Bower related projects:
+
+`npm install && bower install`
+
+After that, you are ready to go.
+
 The mods are available:
 - `grunt development` - assets will be compiled but not optimized to facilitate debugging
 - `grunt production` - assets will be compiled, minimized and merged to speed up pages
