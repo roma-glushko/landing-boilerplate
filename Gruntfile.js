@@ -162,7 +162,7 @@ module.exports = function (grunt) {
                 }
             },
             html: {
-                files: ['src/templates/*.html', 'src/chunks/*.html'],
+                files: ['src/html/layout/*.html', 'src/html/template/*.html'],
                 tasks: ['htmlbuild', 'replace:html'],
                 options: {
                     livereload: true,
