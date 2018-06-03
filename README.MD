@@ -1,3 +1,6 @@
+[![Dependency Status](https://david-dm.org/roma-glushko/landing-boilerplate.png)](https://david-dm.org/roma-glushko/landing-boilerplate)
+[![devDependency Status](https://david-dm.org/roma-glushko/landing-boilerplate/dev-status.png)](https://david-dm.org/roma-glushko/landing-boilerplate#info=devDependencies)
+
 ## Landing Page Boilerplate
 
 A boilerplate that includes LESS, Twitter Bootstrap 3, Grunt, html chunking.
