@@ -268,9 +268,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-modernizr");
     grunt.loadNpmTasks("grunt-remove-logging");
     grunt.loadNpmTasks('grunt-contrib-connect');
-    
-    grunt.registerTask('development', ['copy', 'concat:development', 'less:development', 'postcss', 'htmlbuild', 'replace:html', 'modernizr', 'connect', 'watch']);
+
+    grunt.registerTask('development', ['copy', 'concat:development', 'less:development', 'postcss', 'htmlbuild', 'replace:html', 'modernizr', 'watch']);
     grunt.registerTask('production', ['copy', 'concat:production', 'uglify:production', 'less:development', 'postcss', 'htmlbuild', 'replace:html', 'replace:production', 'cssmin:production', 'modernizr', 'removelogging']);
     grunt.registerTask('production-compress', ['copy', 'concat:production', 'uglify:production', 'less:development', 'postcss', 'htmlbuild', 'replace', 'cssmin:production', 'modernizr', 'removelogging']);
     grunt.registerTask('css-beautify', ['less:beautify', 'postcss', 'replace:beautify']);
+    grunt.registerTask('serve', ['connect']);
 };
