@@ -58,7 +58,7 @@ module.exports = function (grunt) {
             },
             production: {
                 files: {
-                    'public/assets/scripts/index.js': ['public/assets/scripts/libs.js', 'public/assets/scripts/common.js']
+                    'public/assets/scripts/index.js': ['public/assets/scripts/libs.js', 'public/assets/scripts/index.js']
                 }
             }
         },
@@ -103,8 +103,8 @@ module.exports = function (grunt) {
                     from: '.css"/>',
                     to: '.css?timestamp=' + new Date().getTime() + '"/>'
                 },{
-                    from: 'common.js',
-                    to: 'common.js?timestamp=' + new Date().getTime()
+                    from: 'index.js',
+                    to: 'index.js?timestamp=' + new Date().getTime()
                 }]
             },
             production: {
@@ -128,7 +128,7 @@ module.exports = function (grunt) {
                     from: '<script src="js/libs.js"></script>',
                     to: ''
                 },{
-                    from: 'common.js',
+                    from: 'index.js',
                     to: 'index.min.js'
                 },{
                     from: 'styles.css"/>',
@@ -146,7 +146,7 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: ['src/js/*.js', 'js/common.js'],
+                files: ['src/js/*.js', 'js/index.js'],
                 tasks: ['concat:development'],
                 options: {
                     livereload: true,
@@ -174,9 +174,9 @@ module.exports = function (grunt) {
             options: {
                 map: true,
                 processors: [
-                    require('autoprefixer-core')({
+                    require('autoprefixer')({
                         browsers: ['last 2 version', 'Firefox ESR', 'Opera 12.1', 'ie 8', 'ie 9', 'ie 10', 'ie 11']
-                    }).postcss,
+                    }),
                     require('postcss-urlrewrite')({
                         imports: true,
                         properties: [ 'background', 'background-image', 'content', 'src' ],
@@ -250,7 +250,7 @@ module.exports = function (grunt) {
         },
         removelogging: {
             dist: {
-                src: "public/assets/scripts/common.js"
+                src: "public/assets/scripts/index.js"
             }
         }
     });
