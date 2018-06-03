@@ -34,7 +34,7 @@ Local server can be up via `grunt serve` on http://localhost:3000
 #### Parallax
 
 * [Stellar.js](https://github.com/markdalgleish/stellar.js) Simple parallax library
-* [Parallax.js](http://wagerfield.github.io/parallax/) 
+* [Parallax.js](http://wagerfield.github.io/parallax/)
 
 
 ### Useful Tools
@@ -88,10 +88,3 @@ Local server can be up via `grunt serve` on http://localhost:3000
 * [Offline.js](http://github.hubspot.com/offline/docs/welcome/) - Detect when user's internet connection goes offline.
 * [Color Thief](https://github.com/lokesh/color-thief) - Grabs the dominant color or a representative color palette from an image.
 * [Alertify.js](http://fabien-d.github.io/alertify.js/) - Sweet looking alerts and browser dialogs.
-
-### Charts
-
-- [Morris.js](http://www.oesmith.co.uk/morris.js/)
-
-
-
