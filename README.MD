@@ -1,5 +1,5 @@
-[![Dependency Status](https://david-dm.org/roma-glushko/landing-boilerplate.png)](https://david-dm.org/roma-glushko/landing-boilerplate)
-[![devDependency Status](https://david-dm.org/roma-glushko/landing-boilerplate/dev-status.png)](https://david-dm.org/roma-glushko/landing-boilerplate#info=devDependencies)
+[![dependencies Status](https://david-dm.org/roma-glushko/landing-boilerplate/status.svg)](https://david-dm.org/roma-glushko/landing-boilerplate)
+[![devDependencies Status](https://david-dm.org/roma-glushko/landing-boilerplate/dev-status.svg)](https://david-dm.org/roma-glushko/landing-boilerplate?type=dev)
 
 ## Landing Page Boilerplate
 
