@@ -11,6 +11,10 @@ The mods are available:
 
 Local server can be up via `grunt serve` on http://localhost:3000
 
+### Copyrights
+
+Created by Roman Glushko, 2018 (c)
+
 ### Credits and Resources
 
 * [Bootstrap](http://getbootstrap.com/)
