@@ -1,0 +1,20 @@
+{
+  "name": "roman-glushko-personal-page",
+  "description": "Roman Glushko - Personal Page",
+  "main": "index.js",
+  "authors": [
+    "Roman Glushko (roman.glushko.m@gmail.com)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
