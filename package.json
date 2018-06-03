@@ -10,6 +10,7 @@
     "autoprefixer-core": "^3.1.2",
     "grunt": "~0.4.1",
     "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-less": "^0.11.1",
