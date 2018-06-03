@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "9"
+install:
+    - npm install -g grunt-cli
+    - npm install -g bower
+    - npm install
+    - bower install
+script:
+    - grunt development
+    - grunt production
