@@ -13,7 +13,7 @@ Local server can be up via `grunt serve` on http://localhost:3000
 
 ### Copyrights
 
-Created by Roman Glushko, 2018 (c)
+Assembled by Roman Glushko, 2018 (c)
 
 ### Credits and Resources
 
