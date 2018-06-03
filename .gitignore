@@ -142,3 +142,7 @@ fabric.properties
 # Generated files
 public
 !public/.gitkeep
+
+# NPM
+
+package-lock.json
