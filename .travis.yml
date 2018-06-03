@@ -7,4 +7,4 @@ install:
     - npm install
     - bower install
 script:
-    - grunt production
+    - grunt prod

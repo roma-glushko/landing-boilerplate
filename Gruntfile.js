@@ -53,12 +53,24 @@ module.exports = function (grunt) {
         concat: {
             development: {
                 files: {
-                    'public/assets/scripts/libs.js': ['public/assets/scripts/jquery/*.js', 'public/assets/scripts/bootstrap/*.js']
+                    'public/assets/scripts/libs.js': [
+                        'public/assets/scripts/jquery/jquery.js',
+                        'public/assets/scripts/bootstrap/tooltip.js',
+                        'public/assets/scripts/bootstrap/*.js'
+                    ],
+                    'public/assets/scripts/index.js': ['src/js/*.js']
                 }
             },
             production: {
                 files: {
-                    'public/assets/scripts/index.js': ['public/assets/scripts/libs.js', 'public/assets/scripts/index.js']
+                    'public/assets/scripts/libs.js': [
+                        'public/assets/scripts/jquery/jquery.js',
+                        'public/assets/scripts/bootstrap/*.js'
+                    ],
+                    'public/assets/scripts/index.js': [
+                        'public/assets/scripts/libs.js',
+                        'public/assets/scripts/index.js'
+                    ]
                 }
             }
         },
@@ -146,7 +158,7 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: ['src/js/*.js', 'js/index.js'],
+                files: ['src/js/*.js'],
                 tasks: ['concat:development'],
                 options: {
                     livereload: true,
@@ -208,7 +220,8 @@ module.exports = function (grunt) {
                 "srcFile" : "remote",
 
                 // Path to save out the built file.
-                "outputFile" : "public/assets/scripts/modernizr.js",
+                "dest" : "public/assets/scripts/modernizr.js",
+                "devFile" : false,
 
                 // Based on default settings on http://modernizr.com/download/
                 "extra" : {
@@ -269,8 +282,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-remove-logging");
     grunt.loadNpmTasks('grunt-contrib-connect');
 
-    grunt.registerTask('development', ['copy', 'concat:development', 'less:development', 'postcss', 'htmlbuild', 'replace:html', 'modernizr', 'watch']);
-    grunt.registerTask('production', ['copy', 'concat:production', 'uglify:production', 'less:development', 'postcss', 'htmlbuild', 'replace:html', 'replace:production', 'cssmin:production', 'modernizr', 'removelogging']);
+    grunt.registerTask('dev', ['copy', 'concat:development', 'less:development', 'postcss', 'htmlbuild', 'replace:html', 'modernizr', 'watch']);
+    grunt.registerTask('prod', ['copy', 'concat:production', 'uglify:production', 'less:development', 'postcss', 'htmlbuild', 'replace:html', 'replace:production', 'cssmin:production', 'modernizr', 'removelogging']);
     grunt.registerTask('production-compress', ['copy', 'concat:production', 'uglify:production', 'less:development', 'postcss', 'htmlbuild', 'replace', 'cssmin:production', 'modernizr', 'removelogging']);
     grunt.registerTask('css-beautify', ['less:beautify', 'postcss', 'replace:beautify']);
     grunt.registerTask('serve', ['connect']);

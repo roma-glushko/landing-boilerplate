@@ -17,8 +17,8 @@ Installation of the boilerplate is the same as other NPM & Bower related project
 After that, you are ready to go.
 
 The mods are available:
-- `grunt development` - assets will be compiled but not optimized to facilitate debugging
-- `grunt production` - assets will be compiled, minimized and merged to speed up pages
+- `grunt dev` - assets will be compiled but not optimized to facilitate debugging
+- `grunt prod` - assets will be compiled, minimized and merged to speed up pages
 
 Local server can be up via `grunt serve` on http://localhost:3000
 
