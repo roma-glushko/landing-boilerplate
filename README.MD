@@ -3,7 +3,9 @@
 
 ## Landing Page Boilerplate
 
-A boilerplate that includes LESS, Twitter Bootstrap 3, Grunt, html chunking.
+This is a yet another boilerplate with your favourite Twitter Bootstrap 3,
+Grunt, LESS, production asset optimizations, powered by NPM and Bower and
+ready to go!
 
 ### Installation
 
